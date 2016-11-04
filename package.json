@@ -1,0 +1,25 @@
+{
+  "name": "qlaw",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "include-all": "^1.0.0",
+    "rc": "1.0.1",
+    "sails": "~0.12.8",
+    "sails-disk": "~0.10.9",
+    "sails-mongo": "^0.12.1"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xtdev/qlaw.git"
+  },
+  "author": "xtdev",
+  "license": ""
+}

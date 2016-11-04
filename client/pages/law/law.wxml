@@ -1,0 +1,22 @@
+<view class="q-container">
+
+  <view class="q-lawname">{{law.name}}</view>
+
+  <scroll-view class="q-details">
+    <view class="q-description">{{law.desc}}</view>
+
+    <view class="q-preface-title">序言</view>
+
+    <view class="q-preface">{{law.preface}}</view>
+
+    <view class="q-chapters" wx:for="{{law.chapters}}" wx:for-item="chapter" wx:key="name">
+      <view class="q-chapter-name">{{chapter.name}}</view>
+
+      <view class="q-entry" wx:for="{{chapter.entries}}" wx:for-item="entry" wx:key="name">
+        <view class="q-entryname">{{entry.name}}</view>
+        <view class="q-entrycontent">{{entry.content}}</view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

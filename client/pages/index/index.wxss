@@ -1,0 +1,6 @@
+.q-types {
+  overflow: auto;
+}
+
+.q-type {
+}

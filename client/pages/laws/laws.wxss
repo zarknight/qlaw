@@ -1,0 +1,13 @@
+.q-law {
+
+}
+
+.q-law-name {
+
+}
+
+.q-law-date {
+  color: #99989e;
+  font-size: .75em;
+  padding-top: 20rpx;
+}

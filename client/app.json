@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/laws/laws",
+    "pages/law/law"
+  ],
+  "window": {
+    "navigationBarTitleText": "快用法律",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "#ffffff"
+  }
+}
