@@ -3,11 +3,12 @@
   <view class="q-lawname">{{law.name}}</view>
 
   <scroll-view class="q-details">
-    <view class="q-description">{{law.desc}}</view>
+    <view class="q-description" wx:if="{{law.desc}}">{{law.desc}}</view>
 
-    <view class="q-preface-title">序言</view>
-
-    <view class="q-preface">{{law.preface}}</view>
+    <block wx:if="{{law.preface}}">
+      <view class="q-preface-title">序言</view>
+      <view class="q-preface">{{law.preface}}</view>
+    </block>
 
     <view class="q-chapters" wx:for="{{law.chapters}}" wx:for-item="chapter" wx:key="name">
       <view class="q-chapter-name">{{chapter.name}}</view>
