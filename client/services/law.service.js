@@ -1,22 +1,23 @@
 import util from '../utils/util'
+import config from '../constants/config'
 
+const serverURL = config.SERVER_URL
 const request = util.wxPromisify(wx.request)
-const host = 'http://localhost:1337'
 
 function getLawTypes() {
-  return request({url: host + '/law/types'})
+  return request({url: serverURL + '/law/types'})
 }
 
 function getLawsByType(typeId) {
-  return request({url: host + '/law/list', data: {typeId: typeId}})
+  return request({url: serverURL + '/law/list', data: {typeId: typeId}})
 }
 
 function getLawsBySearch(searchText) {
-  return request({url: host + '/law/list', data: {search: searchText}})
+  return request({url: serverURL + '/law/list', data: {search: searchText}})
 }
 
 function getLawById(id) {
-  return request({url: host + '/law/details', data: {id: id}})
+  return request({url: serverURL + '/law/details', data: {id: id}})
 }
 
 module.exports = {
