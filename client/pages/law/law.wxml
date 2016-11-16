@@ -2,7 +2,7 @@
 
   <view class="q-lawname">{{law.name}}</view>
 
-  <scroll-view class="q-details">
+  <view class="q-details">
     <view class="q-description" wx:if="{{law.desc}}">{{law.desc}}</view>
 
     <block wx:if="{{law.preface}}">
@@ -18,6 +18,6 @@
         <view class="q-entrycontent">{{entry.content}}</view>
       </view>
     </view>
-  </scroll-view>
+  </view>
 
 </view>

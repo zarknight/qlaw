@@ -4,17 +4,14 @@
     <input class="q-searchbox"
            placeholder="搜索"
            auto-focus=""
-           bindchange="searchboxChange"
-    />
+           bindchange="searchboxChange"/>
   </view>
 
-  <scroll-view class="q-types">
+  <view class="q-types">
     <navigator class="q-type q-list-item"
                url="../laws/laws?type={{item.id}}"
                wx:for="{{lawTypes}}"
-               wx:key="id">
-      <text>{{item.name}}</text>
-    </navigator>
-  </scroll-view>
+               wx:key="id">{{item.name}}</navigator>
+  </view>
 
 </view>

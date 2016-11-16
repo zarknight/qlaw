@@ -5,11 +5,10 @@
            placeholder="搜索"
            auto-focus=""
            value="{{search}}"
-           bindchange="searchboxChange"
-    />
+           bindchange="searchboxChange"/>
   </view>
 
-  <scroll-view class="q-laws">
+  <view class="q-laws">
     <navigator class="q-law q-list-item"
                url="../law/law?id={{item.id}}"
                wx:for="{{list}}"
@@ -17,6 +16,6 @@
       <view class="q-law-name">{{item.name}}</view>
       <view class="q-law-date">{{item.pdate}}颁布</view>
     </navigator>
-  </scroll-view>
+  </view>
 
 </view>

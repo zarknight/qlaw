@@ -5,7 +5,7 @@
     "pages/law/law"
   ],
   "window": {
-    "navigationBarTitleText": "快用法律",
+    "navigationBarTitleText": "法律手册",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTextStyle": "#ffffff"
