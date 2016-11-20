@@ -1,3 +1,3 @@
 # qlaw
 
-a [Sails](http://sailsjs.org) application
+一个微信小程序的《法律手册Demo程序》（包含微信小程序客户端和一个基于Sails的服务器端）
